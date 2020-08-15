@@ -604,7 +604,7 @@ textarea {
     -webkit-transition: filter .3s ease-out 0s;
     -moz-transition: filter .3s ease-out 0s;
     transition: filter .3s ease-out 0s;
-    filter: blur(10px);
-    -ms-filter: blur(10px);
-    -webkit-filter: blur(10px);
+    /* filter: blur(10px); */
+    /* -ms-filter: blur(10px); */
+    /* -webkit-filter: blur(10px); */
 }
