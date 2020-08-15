@@ -462,8 +462,8 @@ textarea {
     z-index: 10;
     left: 0;
     right: 0;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+    /* visibility: hidden; */
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }
@@ -500,8 +500,9 @@ textarea {
     opacity: 1; }
 
 .probootstrap-animate {
-  opacity: 0;
-  visibility: hidden; }
+  /* opacity: 0; */
+  /* visibility: hidden; */
+ }
 
 #probootstrap-loader {
   position: fixed;
