@@ -228,6 +228,7 @@ h1, h2, h3, h4, h5,
     -o-transition: .2s all ease;
     transition: .2s all ease;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* opacity: 0; */
     /* visibility: hidden;  */
   }
@@ -594,3 +595,16 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.tempContainer {position:fixed; width:100%; margin-right:0px; margin-left:0px; text-align:center; z-index:101;}
+
+
+.card img {
+    -webkit-transition: filter .3s ease-out 0s;
+    -moz-transition: filter .3s ease-out 0s;
+    transition: filter .3s ease-out 0s;
+    filter: blur(10px);
+    -ms-filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
