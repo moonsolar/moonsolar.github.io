@@ -37,6 +37,6 @@ window.onload = function() {
             'actualSize',
             'rotateRight'
           ],
-          title: true,
-          initMaximized: true
+          // title: true,
+          // initMaximized: true
         });

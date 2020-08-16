@@ -107,11 +107,13 @@ h1, h2, h3, h4, h5,
         .probootstrap-aside .probootstrap-nav ul li.active a:after {
           width: 100%; }
   .probootstrap-aside .probootstrap-overflow {
-    height: 500px; }
+    height: calc(100% - 320px);
+   }
   .probootstrap-aside .probootstrap-aside-footer {
     font-size: 14px;
     padding-left: 30px;
     position: absolute;
+
     bottom: 20px; }
 
 .probootstrap-aside-social li {
