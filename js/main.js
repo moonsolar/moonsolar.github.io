@@ -27,21 +27,28 @@ $(function() {
     toggleMenu();
 });
 
-$('#type').on("click", function() {
-  var json = $(this).attr("json");
+var loadPageWithTypeName = function(json) {
+
   $('#container').waterfall({
     itemCls: 'card',
     colWidth: 300,
-    gutterWidth: 15,
-    gutterHeight: 15,
-    isFadeIn: false,
+    gutterWidth: 30,
+    gutterHeight: 30,
+    isFadeIn: true,
+    maxPage: 1,
     checkImagesLoaded: false,
     path: function(page) {
-      if (page == 0) {
+      if (page == 1) {
           return "http://sixplus.biz/" + json;
       } else {
         return ;
       }
     }
   });
+}
+
+$('.menuA').on("click", function() {
+  var json = $(this).attr("json");
+
+  loadPageWithTypeName(json)
 });
