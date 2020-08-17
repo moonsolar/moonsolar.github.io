@@ -1,10 +1,3 @@
-$("document").ready(function() {
-    // var firstType = document.getElementById('type')
-
-    // alert(firstType)
-    loadPageWithTypeName("products/iPhone Case.data")
-});
-
 $('[data-magnify]').magnify({
     headToolbar: [
         'close'

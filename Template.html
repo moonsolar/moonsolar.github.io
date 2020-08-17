@@ -55,10 +55,21 @@
         <a href="#" class="probootstrap-toggle js-probootstrap-toggle"><span class="oi oi-menu"></span></a>
         <div class="probootstrap-main-site-logo"><a href="index.html">MiaoYiYu</a></div>
       </div>
-      <div class="" id="container">
+      <div id="container">
 
       </div>
     </main>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.magnify.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/waterfall.min.js"></script>
+    <script src="js/load.js"></script>
 
     <script type="text/x-handlebars-template" id="waterfall-tpl">
         <!-- <div class="item"> -->
@@ -71,15 +82,10 @@
         <!-- </div> -->
     </script>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
-    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-    <script src="js/main.js"></script>
-    <script src="js/jquery.magnify.js"></script>
-    <script src="js/handlebars.js"></script>
-    <script src="js/waterfall.min.js"></script>
-    <script src="js/load.js"></script>
+    <script>
+      $(document).ready(function() {
+          loadPageWithTypeName("products/%@.data")
+      });
+    </script>
   </body>
 </html>
