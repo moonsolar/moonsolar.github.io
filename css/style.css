@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-@media screen and (max-width: 1140px) {
+/* @media screen and (max-width: 1140px) {
 	.probootstrap-main .card-columns {
 		-webkit-columns: 3;
 		-moz-columns: 3;
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5,
 		-moz-columns: 1;
 		columns: 1;
 	}
-}
+} */
 
 .card .model {
 	position: absolute;

@@ -60,17 +60,19 @@
         <a href="#" class="probootstrap-toggle js-probootstrap-toggle"><span class="oi oi-menu"></span></a>
         <div class="probootstrap-main-site-logo"><a href="index.html">MiaoYiYu</a></div>
       </div>
-      <div class="card-columnss" id="container">
+      <div class="" id="container">
 
       </div>
     </main>
 
     <script type="text/x-handlebars-template" id="waterfall-tpl">
         <div class="item">
+          {{#each this}}
           <div class="card" id="card">
-            <img class="card-img-top probootstrap-animate" data-magnify="gallery" src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
+            <img class="card-img-top probootstrap-animate"  width="300" height="{{height}}" data-magnify="gallery" src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
             <h5 class="model">{{model}}</h5>
           </div>
+          {{/each}}
         </div>
     </script>
 

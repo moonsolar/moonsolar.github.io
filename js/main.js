@@ -29,16 +29,15 @@ $(function() {
 
 $('#type').on("click", function() {
   var json = $(this).attr("json");
-alert(json);
   $('#container').waterfall({
     itemCls: 'card',
-    colWidth: 222,
+    colWidth: 300,
     gutterWidth: 15,
     gutterHeight: 15,
-    isFadeIn: true,
+    isFadeIn: false,
     checkImagesLoaded: false,
     path: function(page) {
-        return json;
+        return "http://sixplus.biz/products/iPhone Case.data";
     }
   });
 });
