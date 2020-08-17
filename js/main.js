@@ -38,7 +38,7 @@ $('#type').on("click", function() {
     checkImagesLoaded: false,
     path: function(page) {
       if (page == 0) {
-          return json;
+          return "http://sixplus.biz/" + json;
       } else {
         return ;
       }
