@@ -37,7 +37,11 @@ $('#type').on("click", function() {
     isFadeIn: false,
     checkImagesLoaded: false,
     path: function(page) {
-        return "http://sixplus.biz/products/iPhone Case.data";
+      if (page == 0) {
+          return json;
+      } else {
+        return ;
+      }
     }
   });
 });
