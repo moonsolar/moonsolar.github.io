@@ -27,7 +27,7 @@ $(function() {
     toggleMenu();
 });
 
-$('.probootstrap-animate').on("click", function() {
+$('#type').on("click", function() {
   var json = $(this).attr("json");
 alert(json);
   $('#container').waterfall({
