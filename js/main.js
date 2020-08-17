@@ -29,7 +29,7 @@ $(function() {
 
 $('.probootstrap-animate').on("click", function() {
   var json = $(this).attr("json");
-
+alert(json);
   $('#container').waterfall({
     itemCls: 'card',
     colWidth: 222,
