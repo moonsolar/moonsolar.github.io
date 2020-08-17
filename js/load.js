@@ -1,4 +1,4 @@
-window.onload = function() {
+windowss.onload = function() {
     var imgCon = document.getElementsByClassName('card-columns')
     var imgDivs = imgCon[0].getElementsByTagName('div')
 
