@@ -31,10 +31,10 @@ var loadPageWithTypeName = function(json) {
 
   $('#container').waterfall({
     itemCls: 'card',
-    colWidth: 300,
-    gutterWidth: 30,
-    gutterHeight: 30,
-    isFadeIn: true,
+    colWidth: 200,
+    gutterWidth: 20,
+    gutterHeight: 20,
+    isFadeIn: false,
     maxPage: 1,
     checkImagesLoaded: false,
     path: function(page) {

@@ -37,7 +37,7 @@ a:hover {
     position: absolute;
     top: 0;
     z-index: 1;
-    width: 300px;
+    width: 200px;
     padding: 0px;
     line-height: 1.5;
     background-color: #fff;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 #trigger {
-	padding: 10px 30px 20px 30px;
+	padding: 10px 10px 10px 10px;
 }
 #trigger a { margin-right: 30px;}
 
