@@ -860,3 +860,16 @@ textarea {
 .magnify-button {
 	pointer-events: auto;
 }
+
+#loading {
+	position: absolute;
+             /*img左上角移动到html的中心*/
+             top: 50%;
+             left: 50%;
+             /*img左上角向左上角分别移动自身的一半距离*/
+             margin-left: -42px;
+             margin-top: -40px;
+             /*text-align: center;*/
+						/* background-color: #fac; */
+						text-align: center;
+}

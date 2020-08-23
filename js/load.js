@@ -15,12 +15,11 @@ $('[data-magnify]').magnify({
     // initMaximized: true
 });
 
-
 $('body').on('click','.card-img-top',function(){
             var _this = $(this);//将当前的pimg元素作为_this传入函数
-            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+            imgShow("#outerdiv", "#innerdiv", "#bigimg", "#loading", _this);
         });
-        function imgShow(outerdiv, innerdiv, bigimg, _this){
+        function imgShow(outerdiv, innerdiv, bigimg, loading, _this){
             var src = _this.attr("data-src");//获取当前点击的pimg元素中的src属性
             $(bigimg).attr("src", src);//设置#bigimg元素的src属性
             var imageSize = getImageSize(_this);/*获取当前点击图片的真实大小，这里我封装了一个函数，返回一个数组*/
@@ -44,6 +43,10 @@ $('body').on('click','.card-img-top',function(){
                 imgHeight = realHeight;
             }
             $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放
+            $(loading).css({'display':'block'});
+            $(bigimg).imagesLoaded(function(){
+              $(loading).css({'display':'none'});
+            });
             var w = (windowW-imgWidth)/2;//计算图片与窗口左边距
             var h = (windowH-imgHeight)/2;//计算图片与窗口上边距
             $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性
