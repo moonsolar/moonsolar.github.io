@@ -45,7 +45,7 @@ $('body').on('click','.card-img-top',function(){
             $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放
             $(loading).css({'display':'block'});
             $(bigimg).imagesLoaded(function(){
-              $(loading).css({'display':'none'});
+              // $(loading).css({'display':'none'});
             });
             var w = (windowW-imgWidth)/2;//计算图片与窗口左边距
             var h = (windowH-imgHeight)/2;//计算图片与窗口上边距
