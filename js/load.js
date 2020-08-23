@@ -26,10 +26,10 @@ $('body').on('click','.card-img-top',function(){
             var imageSize = getImageSize(_this);/*获取当前点击图片的真实大小，这里我封装了一个函数，返回一个数组*/
             var windowW = $(window).width();//获取当前窗口宽度
             var windowH = $(window).height();//获取当前窗口高度
-            var realWidth = imageSize[0];//获取图片真实宽度
-            var realHeight = imageSize[1];//获取图片真实高度
+            var realWidth = imageSize[0] * 20;//获取图片真实宽度
+            var realHeight = imageSize[1] * 20;//获取图片真实高度
             var imgWidth, imgHeight;
-            var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+            var scale = 1;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
             if(realHeight>windowH*scale) {//判断图片高度
                 imgHeight = windowH*scale;//如大于窗口高度，图片高度进行缩放
                 imgWidth = imgHeight/realHeight*realWidth;//等比例缩放宽度
@@ -48,10 +48,11 @@ $('body').on('click','.card-img-top',function(){
             var h = (windowH-imgHeight)/2;//计算图片与窗口上边距
             $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性
             $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg
-
+            $(outerdiv).css({"width":"100%", "height":"100%"});
 
             $(outerdiv).click(function(){//再次点击淡出消失弹出层
                 $(this).fadeOut("fast");
+                // $(this).css({"width":100%, "height":100%});
             });
         }
         function getImageSize(imgE){

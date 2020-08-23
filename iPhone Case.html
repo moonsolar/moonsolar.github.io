@@ -64,7 +64,7 @@
 
       </div>
     </main>
-    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:100;width:100;height:100;display:none;">
+    <div id="outerdiv" style="position:fixed; width:100; height:100; margin:0; background:rgba(0,0,0,0.7); z-index:9000; display:none;">
             <div id="innerdiv" style="position:absolute;">
                 <img id="bigimg" style="border:5px solid #fff;" src="" />
             </div>
@@ -82,9 +82,10 @@
 
     <script type="text/x-handlebars-template" id="waterfall-tpl">
         <!-- <div class="item"> -->
+        <!-- data-magnify="gallery" -->
           {{#each this}}
           <div class="card" id="card">
-            <img class="card-img-top probootstrap-animate" width=200 height={{height}} data-magnifys="gallery" src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
+            <img class="card-img-top probootstrap-animate" width=200 height={{height}} src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
             <h5 class="model">{{model}}</h5>
           </div>
           {{/each}}
