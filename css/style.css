@@ -7,6 +7,7 @@ body {
 	line-height: 1.8;
 	font-size: 18px;
 	background: #fff;
+	background-image:url('./BgRepeat.jpg');
 	color: #859196;
 }
 
@@ -248,7 +249,7 @@ h1, h2, h3, h4, h5,
 @media screen and (max-width: 768px) {
 	.probootstrap-main {
 		width: 100%;
-		padding: 30px 15px;
+		padding: 15px 15px;
 	}
 }
 

@@ -45,10 +45,10 @@ var loadPageWithTypeName = function(json) {
       }
     }
   });
-}
+};
 
 $('.menuA').on("click", function() {
   var json = $(this).attr("json");
 
-  loadPageWithTypeName(json)
+  loadPageWithTypeName(json);
 });
