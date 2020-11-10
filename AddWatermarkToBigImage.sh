@@ -1,2 +1,0 @@
-nconvert -text_font "Comic Sans MS" 40 -text_color 255 255 255 -text_back 0 0 0 -text_flag bottom-left -text_pos 20 -10 -text_rotation 0 -text "WeChat/WhatsApp:
-" -text_font "Arial Black" 40 -text_color 255 255 18 -text_back 0 0 0 -text_flag bottom-left -text_pos 20 -10 -text_rotation 0 -text "+8615602311176" -o jpeg -q 100 -i 
