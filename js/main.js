@@ -28,16 +28,16 @@ $(function() {
 });
 
 var loadPageWithTypeName = function(json) {
-
   $('#container').waterfall({
     itemCls: 'card',
-    colWidth: 200,
-    gutterWidth: 10,
-    gutterHeight: 10,
+    colWidth: 180,
+    gutterWidth: 4,
+    gutterHeight: 4,
     isFadeIn: true,
     maxPage: 1,
     checkImagesLoaded: false,
-    path: function(page) {
+    path:
+    function(page) {
       if (page == 1) {
           return "http://sixplus.biz/" + json;
       } else {
@@ -47,8 +47,26 @@ var loadPageWithTypeName = function(json) {
   });
 };
 
-$('.menuA').on("click", function() {
-  var json = $(this).attr("json");
+$('.subMenu').on("click", function() {
+  var divEl = document.getElementById("scrollmenubar");
+
+  // Make it active
+  var subItems = divEl.getElementsByTagName("span");
+  var i;
+  for (i = 0; i < subItems.length; i++) {
+    subItems[i].classList.remove("active");
+  }
+
+  // Scroll to left
+  var selectedTrEl = $(this)[0];
+  var scrollTo = selectedTrEl.offsetLeft;
+  selectedTrEl.classList.add("active");
+
+  // $('.scrollmenu')
+  $(divEl).animate( { scrollLeft: scrollTo - 80 }, 300);
+
+  // Reload data
+  var json = "products/" + $(this).text() + ".json";
 
   loadPageWithTypeName(json);
 });

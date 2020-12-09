@@ -34,8 +34,8 @@
       <div class="probootstrap-overflow">
         <nav class="probootstrap-nav">
           <ul>
-            		<li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="Airpods Case.html">Airpods Case</a></li>
-		<li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="Airpods Round Case.html">Airpods Round Case</a></li>
+            		  <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="Airpods Case.html">Airpods Case</a></li>
+		              <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="Airpods Round Case.html">Airpods Round Case</a></li>
 		<li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="Airpods Silicon Case.html">Airpods Silicon Case</a></li>
 		<li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="Airpods Silicon Case(Bag).html">Airpods Silicon Case(Bag)</a></li>
 		<li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="Airpods Silicon Case(Shoes).html">Airpods Silicon Case(Shoes)</a></li>
@@ -72,6 +72,17 @@
         <a href="#" class="probootstrap-toggle js-probootstrap-toggle"><span class="oi oi-menu"></span></a>
         <div class="probootstrap-main-site-logo"><a href="index.html">MiaoYiYu</a></div>
       </div>
+      <div class="scrollmenu" id="scrollmenubar">
+  <span class="subMenu">Airpods Case</span>
+  <span class="subMenu">Silicon Shoes($23.5-$35.6)</span>
+  <span class="subMenu">Silicon Bag($23.5-$35.6)</span>
+  <span class="subMenu">Round($3.9-$5.2)</span>
+  <span class="subMenu">Square($3.9-$5.2)</span>
+  <span class="subMenu">1 Bag($23.5-$35.6)</span>
+  <span class="subMenu">2 Bag($23.5-$35.6)</span>
+  <span class="subMenu">3 Bag($23.5-$35.6)</span>
+  <span class="subMenu">Silicon Bag End($23.5-$35.6)</span>
+</div>
       <div id="container">
 
       </div>
@@ -95,15 +106,12 @@
     <script src="js/load.js"></script>
 
     <script type="text/x-handlebars-template" id="waterfall-tpl">
-        <!-- <div class="item"> -->
-        <!-- data-magnify="gallery" -->
           {{#each this}}
-          <div class="card" id="card">
-            <img class="card-img-top probootstrap-animate" width=200 height={{height}} src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
+          <div class="card" id="card" style="width:180px; height:{{height}}px;">
+            <img class="card-img-top probootstrap-animate" style="width:180px; height:{{height}}px;" src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
             <h5 class="model">{{model}}</h5>
           </div>
           {{/each}}
-        <!-- </div> -->
     </script>
 
     <script>

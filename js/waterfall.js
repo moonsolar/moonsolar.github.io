@@ -121,7 +121,6 @@
         this._init();
     }
 
-
     Waterfall.prototype = {
         constructor: Waterfall,
 

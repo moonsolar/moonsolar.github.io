@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5,
 .probootstrap-main {
 	width: calc(100% - 250px);
 	float: right;
-	padding: 30px;
+	padding: 0;
 	position: relative;
 }
 
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5,
 .probootstrap-main .probootstrap-bar {
 	position: fixed;
 	top: 0;
-	padding: 20px 0;
+	padding: 14px 0;
 	z-index: 5;
 	background: #fff;
 	width: calc(100% - 250px);
@@ -209,13 +209,32 @@ h1, h2, h3, h4, h5,
 }
 
 @media screen and (max-width: 768px) {
+	.probootstrap-main {
+		width: 100%;
+	}
+
 	.probootstrap-main .probootstrap-bar {
 		width: 100%;
+		height: 60px;
 		left: 0;
 		right: 0;
 		-webkit-transform: translateY(0%);
 		-ms-transform: translateY(0%);
 		transform: translateY(0%);
+	}
+
+	#container {
+		margin-top: 130px; !important
+	}
+
+	#scrollmenubar {
+		padding: 0;
+		margin: 0;
+		margin-top: 60px;
+	}
+
+	div#scrollmenubar {
+		width: 100%;
 	}
 }
 
@@ -244,13 +263,6 @@ h1, h2, h3, h4, h5,
 	color: #000;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-}
-
-@media screen and (max-width: 768px) {
-	.probootstrap-main {
-		width: 100%;
-		padding: 15px 15px;
-	}
 }
 
 /* @media screen and (max-width: 1140px) {
@@ -308,6 +320,9 @@ h1, h2, h3, h4, h5,
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* opacity: 0; */
     /* visibility: hidden;  */
+}
+.card {
+	cursor: pointer;
 }
 
 .probootstrap-main .card-columns .card.img-loaded {
@@ -822,6 +837,10 @@ textarea {
 	z-index: 101;
 }
 
+#container {
+	margin-top: 60px;
+}
+
 .card img {
 	-webkit-transition: filter .3s ease-out 0s;
 	-moz-transition: filter .3s ease-out 0s;
@@ -876,4 +895,56 @@ textarea {
              /*text-align: center;*/
 						background-color: #eeee;
 						text-align: center;
+}
+
+
+/* Scrollable Menu */
+div.scrollmenu {
+	width:calc(100% - 250px);
+	position: fixed;
+	z-index: 4;
+  background-color: #f1f1f1;
+  overflow: auto;
+  white-space: nowrap;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+div.scrollmenu {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+div.scrollmenu span {
+  display: inline-block;
+  color: #222;
+  text-align: center;
+  margin: 8px 14px;
+  text-decoration: none;
+	/* margin-bottom: 10px; */
+}
+
+div.scrollmenu span:hover {
+  /* background-color: #1FAD9F; */
+	cursor: pointer;
+	color: #1FAD9F;
+	border-bottom-color: #1FAD9F;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	text-decoration: none;
+}
+
+div.scrollmenu span.active {
+  /* background-color: #1FAD9F; */
+	cursor: pointer;
+	color: #1FAD9F;
+	border-bottom-color: #1FAD9F;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	text-decoration: none;
 }
