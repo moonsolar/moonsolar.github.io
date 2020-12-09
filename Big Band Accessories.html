@@ -98,8 +98,8 @@
         <!-- <div class="item"> -->
         <!-- data-magnify="gallery" -->
           {{#each this}}
-          <div class="card" id="card">
-            <img class="card-img-top probootstrap-animate" width=200 height={{height}} src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
+          <div class="card" id="card" style="width:{{width}}px; height:{{height}}px;">
+            <img class="card-img-top probootstrap-animate" style="width:{{width}}px; height:{{height}}px;" src="{{thumbUrl}}" data-src="{{url}}" alt="{{model}}" />
             <h5 class="model">{{model}}</h5>
           </div>
           {{/each}}
@@ -108,7 +108,7 @@
 
     <script>
       $(document).ready(function() {
-          loadPageWithTypeName("products/Big Band Accessories.data")
+          loadPageWithTypeName("products/180.data")
       });
     </script>
   </body>
