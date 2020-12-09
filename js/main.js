@@ -40,7 +40,7 @@ var loadPageWithTypeName = function(json) {
     path:
     function(page) {
       if (page == 1) {
-          return "http://sixplus.biz/" + json;
+          return "https://moonsolar.github.io/" + json;
       } else {
         return ;
       }
