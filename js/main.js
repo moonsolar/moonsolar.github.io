@@ -28,6 +28,7 @@ $(function() {
 });
 
 var loadPageWithTypeName = function(json) {
+  $('#container').innerHTML = '';
   $('#container').waterfall({
     itemCls: 'card',
     colWidth: 180,
